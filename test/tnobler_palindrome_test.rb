@@ -18,4 +18,8 @@ class TnoblerPalindromeTest < Minitest::Test
     assert "Madam, I'm Adam.".palindrome?
   end
 
+  def test_spaces_not_palindrome
+    refute "      ".palindrome?
+  end
+
 end
